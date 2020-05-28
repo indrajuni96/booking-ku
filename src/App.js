@@ -3,13 +3,15 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 
 import "assets/scss/style.scss";
-import landingPage from "pages/landingPage";
+import LandingPage from "pages/landingPage";
+import Example from "pages/example"
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Route path="/" component={landingPage}></Route>
+        <Route exact path="/" component={LandingPage} />
+        <Route path="/example" component={Example} />
       </Router>
     </div>
   );
