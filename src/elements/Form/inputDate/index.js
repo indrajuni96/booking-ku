@@ -15,7 +15,6 @@ export default function Date(props) {
     const { value, placeholder, name } = props
     const [isShowed, setIsShowed] = useState(false)
 
-
     const datePickerChange = value => {
         const target = {
             target: {

@@ -3,9 +3,6 @@ import Fade from 'react-reveal/Fade';
 
 import ImageHero from 'assets/images/img-hero.jpg'
 import ImageHeroFrame from 'assets/images/img-hero-frame.jpg'
-import IconCities from 'assets/images/icons/icon-cities.svg'
-import IconTraveler from 'assets/images/icons/icon-traveler.svg'
-import IconTreasure from 'assets/images/icons/icon-treasure.svg'
 
 import Button from 'elements/button'
 
@@ -19,7 +16,6 @@ export default function hero(props) {
             behavior: "smooth"
         })
     }
-
 
     return (
         <Fade bottom>
@@ -39,7 +35,7 @@ export default function hero(props) {
 
                         <div className="row" style={{ marginTop: 80 }}>
                             <div className="col-auto" style={{ marginRight: 35 }}>
-                                <img width="36" height="36" src={IconTraveler} alt={`${props.data.travelers} Travelers`} />
+                                <img width="36" height="36" src="/images/icons/icon-traveler.svg" alt={`${props.data.travelers} Travelers`} />
                                 <h6 className="mt-3">
                                     {formatNumber(props.data.travelers)} <span className="text-gray-500 font-weight-light">
                                         travelers
@@ -48,7 +44,7 @@ export default function hero(props) {
                             </div>
 
                             <div className="col-auto" style={{ marginRight: 35 }}>
-                                <img width="36" height="36" src={IconTreasure} alt={`${props.data.treasures} Treasures`} />
+                                <img width="36" height="36" src="/images/icons/icon-treasure.svg" alt={`${props.data.treasures} Treasures`} />
                                 <h6 className="mt-3">
                                     {formatNumber(props.data.treasures)} <span className="text-gray-500 font-weight-light">
                                         treasures
@@ -57,7 +53,7 @@ export default function hero(props) {
                             </div>
 
                             <div className="col-auto">
-                                <img width="36" height="36" src={IconCities} alt={`${props.data.cities} Travelers`} />
+                                <img width="36" height="36" src="/images/icons/icon-cities.svg" alt={`${props.data.cities} Travelers`} />
                                 <h6 className="mt-3">
                                     {formatNumber(props.data.cities)} <span className="text-gray-500 font-weight-light">
                                         cities
