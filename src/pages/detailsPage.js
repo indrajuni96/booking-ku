@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Fade from 'react-reveal'
+import Fade from 'react-reveal/Fade'
 
 import Header from 'parts/header'
 import PageDetailTitle from 'parts/pageDetailTitle'
